@@ -30,9 +30,21 @@ print("-------------------------------------------\n"
 #
 # Example (similar idea, not the answer):
 # for i in range(3):
-#     print("Hello number", i)
+#     print("Hello number", i )
 #
 # Write your code below:
+for i in range(4):
+    print("good morning!")
+
+for i in range(5):
+    print("good morning! Message number", i + 1)
+    # We add 1 to i to display message numbers starting from 1 instead of 0
+
+
+for i in range(5):
+    print("The  message number", i + 1, "- Good morning!")
+
+
 
 
 # Task 2: Counting with for loops
@@ -53,6 +65,15 @@ print("-------------------------------------------\n"
 #
 # Write your code below:
 
+print("Hey ! Counting up...")
+for i in range(1, 11):  # range(1, 11) gives numbers 1 to 10 not 11 WHY??
+    print(i)
+
+# Counting down from 10 to 1
+print("let's Count down...")
+for i in range(10, 0, -1):  # start=10, stop=0 (not included), step=-1
+    print(i)
+
 
 # Task 3: Using for loops with user input
 # -------------------------------------------
@@ -72,13 +93,20 @@ print("-------------------------------------------\n"
 #
 # Write your code below:
 
+# user goes to the cinema
+times = int(input("How many times do you go to the cinema? "))
+
+# the number you gave will be printed 
+for i in range(times):
+    print("Movie", i + 1, "- Popcorn, please!")
 
 # -------------------------------------------
+
 # Submitting Your Work (after Tasks 1–3)
 # -------------------------------------------
 # Once you’ve completed the 3 basic tasks:
 # 1. Save your file
-# 2. Open the terminal
+# 2. Open the terminal 
 # 3. Run:
 #    git add Ex1_for_loops.py
 #    git commit -m "Completed for loop basic tasks"
