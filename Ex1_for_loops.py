@@ -71,7 +71,7 @@ for i in range(1, 11):  # range(1, 11) gives numbers 1 to 10 not 11 WHY??
 
 # Counting down from 10 to 1
 print("let's Count down...")
-for i in range(10, 0, -1):  # start=10, stop=0 (not included), step=-1
+for i in range(10, 0, -1):  # start=10, stop=0 (not included), decrease =-1
     print(i)
 
 
@@ -138,6 +138,12 @@ print("-------------------------------------------\n"
 
 # Write your code below:
 
+word = input("Write a word:  ")
+for letter in word:
+    print(letter)
+pet = input("what is your pet? ") 
+for i in pet:
+    print(i)
 
 # Extension 2:
 # -------------------------------------------
@@ -149,7 +155,11 @@ print("-------------------------------------------\n"
 # Hint: You can use range(start, stop, step) — for example, range(0, 10, 2)
 
 # Write your code below:
+number = int(input("write a number: "))
+for i in range(0,number +1,2): 
+    print (i)
 
+# start 0 , add 1 to number because it will not be counted,and increases by 2 each time.
 
 # Extension 3 (a bit harder):
 # -------------------------------------------
@@ -172,6 +182,11 @@ print("-------------------------------------------\n"
 
 # Write your code below:
 
+your_name = input("What is your name? ")
+
+for i in your_name:
+    if i != " ":       # if i is not space
+        print(i)
 
 # -------------------------------------------
 # ADVANCED ACTIVITY
@@ -193,6 +208,11 @@ print("-------------------------------------------\n"
 # print(f"{num} x {i} = {num * i}")
 
 # Write your code below:
+given_number = int(input("Give a number: "))
+
+for i in range(1, 11):
+    result = given_number * i
+    print(f"{given_number} x {i} = {result}")
 
 
 # -------------------------------------------
